@@ -9,6 +9,8 @@ public class RandomWalkGenerator : MonoBehaviour
     [SerializeField]
     protected Vector2Int startPosition = Vector2Int.zero;
 
+    public MapProceduralDrawer mapProceduralDrawer;
+
     [SerializeField]
     private int iterations = 10;
 
@@ -18,10 +20,15 @@ public class RandomWalkGenerator : MonoBehaviour
     public void ProceduralGeneration()
     {
         HashSet<Vector2Int> cubePositions = RandomWalk();
-        // test printing
+        
+        // Drawing cube prefabs
+        // clear the entire map before drawing (again)
+        mapProceduralDrawer.ClearMap();
         foreach (var position in cubePositions)
         {
+            // test-printing the positions of randomWalk cubes
             Debug.Log(position);
+            mapProceduralDrawer.CubeDrawing(position);
         }
     }
 
@@ -56,10 +63,10 @@ public static class Direction2D
 {
     public static List<Vector2Int> cardinalDirections = new List<Vector2Int>()
     {
-        new Vector2Int(0, 1), // up
-        new Vector2Int(1, 0), // right
-        new Vector2Int(0, -1), // down
-        new Vector2Int(-1, 0) // left
+        new Vector2Int(0, 10), // up
+        new Vector2Int(10, 0), // right
+        new Vector2Int(0, -10), // down
+        new Vector2Int(-10, 0) // left
     };
 
     public static Vector2Int GetRandomCardinalDirection()
