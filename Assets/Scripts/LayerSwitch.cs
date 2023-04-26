@@ -19,7 +19,6 @@ public class LayerSwitch : MonoBehaviour
     //when the Submarine exits the collider, switch the Layer to _hideLayer
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log($"the _showLayer is {_showLayer.value} and the _hideLayer is {_hideLayer.value}");
         if (other.gameObject == Submarine)
         {
             ChangeLayerRecursively(_collider.gameObject, _showLayer);
