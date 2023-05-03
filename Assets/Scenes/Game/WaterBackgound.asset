@@ -1,5 +1,30 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8835288530505143522
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccf1aba9553839d41ae37dd52e9ebcce, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 0
+  mode:
+    m_OverrideState: 0
+    m_Value: 0
+  quality:
+    m_OverrideState: 1
+    m_Value: 2
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.142
+  clamp:
+    m_OverrideState: 1
+    m_Value: 0.062
 --- !u!114 &-6259029497077990921
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -29,20 +54,20 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
   focusDistance:
-    m_OverrideState: 0
-    m_Value: 346
+    m_OverrideState: 1
+    m_Value: 6.7
   aperture:
     m_OverrideState: 1
-    m_Value: 32
+    m_Value: 13.9
   focalLength:
     m_OverrideState: 1
-    m_Value: 300
+    m_Value: 178
   bladeCount:
     m_OverrideState: 1
     m_Value: 5
   bladeCurvature:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.45
   bladeRotation:
     m_OverrideState: 1
     m_Value: 0
@@ -56,14 +81,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Main Camera Profile
+  m_Name: WaterBackgound
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 8829824097847484429}
-  - {fileID: 684394610438418686}
   - {fileID: -6259029497077990921}
   - {fileID: 5087562003827149236}
---- !u!114 &684394610438418686
+  - {fileID: 7760038160647666882}
+  - {fileID: 5084858996201204419}
+  - {fileID: -8835288530505143522}
+--- !u!114 &5084858996201204419
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75,10 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
   m_Name: ChromaticAberration
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   intensity:
-    m_OverrideState: 0
-    m_Value: 1
+    m_OverrideState: 1
+    m_Value: 0.013
 --- !u!114 &5087562003827149236
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -93,21 +119,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   postExposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1.41
   contrast:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: -25
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: -8
   saturation:
-    m_OverrideState: 0
-    m_Value: 0
---- !u!114 &8829824097847484429
+    m_OverrideState: 1
+    m_Value: 16
+--- !u!114 &7760038160647666882
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,35 +142,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
-  m_Name: Bloom
+  m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
+  m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 0
-  threshold:
+  active: 1
+  color:
     m_OverrideState: 1
-    m_Value: 0.08
+    m_Value: {r: 0.13082945, g: 0.5575475, b: 0.7924528, a: 1}
+  center:
+    m_OverrideState: 0
+    m_Value: {x: 0.5, y: 0.5}
   intensity:
-    m_OverrideState: 0
-    m_Value: 0
-  scatter:
-    m_OverrideState: 0
-    m_Value: 0.7
-  clamp:
-    m_OverrideState: 0
-    m_Value: 65472
-  tint:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-  highQualityFiltering:
-    m_OverrideState: 0
-    m_Value: 0
-  skipIterations:
-    m_OverrideState: 0
+    m_OverrideState: 1
+    m_Value: 0.71
+  smoothness:
+    m_OverrideState: 1
+    m_Value: 0.285
+  rounded:
+    m_OverrideState: 1
     m_Value: 1
-  dirtTexture:
-    m_OverrideState: 0
-    m_Value: {fileID: 0}
-    dimension: 1
-  dirtIntensity:
-    m_OverrideState: 0
-    m_Value: 0

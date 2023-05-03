@@ -10,12 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Overlay Profile
+  m_Name: Front
   m_EditorClassIdentifier: 
   components:
   - {fileID: 1415532087735324838}
   - {fileID: 5139575527584513898}
-  - {fileID: 1764960882702336816}
   - {fileID: 4525054648214206279}
   - {fileID: 8234668213145465097}
 --- !u!114 &1415532087735324838
@@ -30,7 +29,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   postExposure:
     m_OverrideState: 0
     m_Value: 0
@@ -45,35 +44,7 @@ MonoBehaviour:
     m_Value: 0
   saturation:
     m_OverrideState: 1
-    m_Value: -100
---- !u!114 &1764960882702336816
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5e1dc532bcb41949b58bc4f2abfbb7e, type: 3}
-  m_Name: LensDistortion
-  m_EditorClassIdentifier: 
-  active: 1
-  intensity:
-    m_OverrideState: 1
-    m_Value: 1
-  xMultiplier:
-    m_OverrideState: 1
-    m_Value: 0.901
-  yMultiplier:
-    m_OverrideState: 1
-    m_Value: 0.648
-  center:
-    m_OverrideState: 0
-    m_Value: {x: 0.5, y: 0.5}
-  scale:
-    m_OverrideState: 1
-    m_Value: 1.14
+    m_Value: 86
 --- !u!114 &4525054648214206279
 MonoBehaviour:
   m_ObjectHideFlags: 3

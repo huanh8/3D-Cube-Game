@@ -338,7 +338,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 9.5, y: 9.5, z: 9}
+  m_Size: {x: 10, y: 10, z: 10}
   m_Center: {x: 4, y: -2, z: 5}
 --- !u!114 &2132283582065732475
 MonoBehaviour:
@@ -359,8 +359,6 @@ MonoBehaviour:
   _hideLayer:
     serializedVersion: 2
     m_Bits: 64
-  renderers: []
-  fadeDuration: 5
 --- !u!1 &8518000967918858819
 GameObject:
   m_ObjectHideFlags: 0
