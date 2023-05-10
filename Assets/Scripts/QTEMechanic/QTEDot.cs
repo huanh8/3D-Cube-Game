@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class QTEDot : MonoBehaviour
 {
-    private float speed = 5f;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float speed;
 
-    // Update is called once per frame
     void Update()
     {
         transform.Translate(speed * Vector3.down * Time.deltaTime);
