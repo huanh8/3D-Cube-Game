@@ -46,7 +46,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 63f4ad30fa667df4ab101dd83ecf68b1, type: 3}
         m_Scale: {x: -21.97, y: -1.08}
         m_Offset: {x: 0, y: -15.06}
     - _MetallicGlossMap:
@@ -80,14 +80,14 @@ Material:
     - _GradIntensity: 0
     - _GradYCap: 0
     - _HighIntensity: 2.07
-    - _LightScalar: 0.68
+    - _LightScalar: 0.95
     - _LowIntensity: 3.1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineSize: 30.01
+    - _OutlineSize: 10.3
     - _Parallax: 0.02
-    - _RampLevels: 6
+    - _RampLevels: 5
     - _RimAlpha: 0
     - _RimDropOff: 0
     - _RimPower: 0
@@ -97,11 +97,11 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.9056604, g: 0.7373534, b: 0.4229263, a: 1}
+    - _Color: {r: 1, g: 0.6443301, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 0.9245283, g: 0.36016965, b: 0.06541473, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
     - _HighColor: {r: 1, g: 1, b: 1, a: 1}
     - _LowColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 0.8867924, g: 0.80268115, b: 0.6316305, a: 1}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
