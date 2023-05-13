@@ -97,7 +97,7 @@ MonoBehaviour:
   m_MinSize: {x: 230, y: 271}
   m_MaxSize: {x: 10000, y: 10021}
   vertical: 0
-  controlID: 45
+  controlID: 118
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 172
+  controlID: 55
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 97
+  controlID: 95
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -348,7 +348,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 98
+  controlID: 96
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -416,22 +416,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\jarvi\OneDrive\Documents\Polytech Work\terrarium game\GitHub\3D-Cube-Game
+  m_LastProjectPath: C:\Users\jarvi\Documents\3D-Cube-Game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 14730000
-    m_LastClickedID: 29460
-    m_ExpandedIDs: 000000001473000016730000187300001a7300001c7300001e7300003473000000ca9a3b
+    m_SelectedIDs: aed70000
+    m_LastClickedID: 55214
+    m_ExpandedIDs: 000000009ed7000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -459,7 +459,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001473000016730000187300001a7300001c7300001e730000
+    m_ExpandedIDs: 
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -587,9 +587,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 546c0000
-      m_LastClickedID: 27732
-      m_ExpandedIDs: bab6ffffd4eeffffe2faffff546c0000
+      m_SelectedIDs: bad70000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 0a9fffff00a1ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -904,9 +904,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 39.939003, y: -59.74568, z: 73.56863}
+    m_Target: {x: 35.88106, y: -48.614906, z: 79.97048}
     speed: 2
-    m_Value: {x: 39.939003, y: -59.74568, z: 73.56863}
+    m_Value: {x: 35.88106, y: -48.614906, z: 79.97048}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -955,11 +955,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.2775689, y: -0.3108511, z: 0.095436975, w: 0.904024}
     speed: 2
-    m_Value: {x: 0.2774198, y: -0.31220046, z: 0.09585128, w: 0.9035384}
+    m_Value: {x: -0.2775689, y: 0.3108511, z: -0.095436975, w: -0.904024}
   m_Size:
-    m_Target: 87.362564
+    m_Target: 90.68792
     speed: 2
-    m_Value: 83.60054
+    m_Value: 90.68792
   m_Ortho:
     m_Target: 0
     speed: 2
