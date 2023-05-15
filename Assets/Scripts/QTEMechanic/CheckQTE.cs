@@ -8,6 +8,7 @@ public class CheckQTE : MonoBehaviour
     private bool check;
     public GameObject activeZone;
     private List<GameObject> dots;
+    public QTEProgress qteProgress;
 
     void Update()
     {
@@ -22,10 +23,12 @@ public class CheckQTE : MonoBehaviour
                         check = false;
                         dots.Remove(dot);
                         Destroy(dot);
+                        qteProgress.Success();
                     }
                     else // not successful
                     {
                         Debug.Log("Failed");
+                        qteProgress.Fail();
                         StartCoroutine(DotFail(dot));
                     }
             }
@@ -56,6 +59,7 @@ public class CheckQTE : MonoBehaviour
             check = false;
             dots.Remove(other.gameObject);
             Destroy(other.gameObject);
+            qteProgress.Fail();
         }
     }
 }
