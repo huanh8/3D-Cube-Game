@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &296147653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3749889808387251037, guid: c2f62d840bcc33f4b96b3133d3ba4121, type: 3}
+  m_PrefabInstance: {fileID: 643057100}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &318344469
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +809,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3755611003144159231, guid: c2f62d840bcc33f4b96b3133d3ba4121, type: 3}
   m_PrefabInstance: {fileID: 643057100}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1076351593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296147653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 0.5372549}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &1102663958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7817208076645504485, guid: 74df429afc95c6642a31cb55a616fdd9, type: 3}
