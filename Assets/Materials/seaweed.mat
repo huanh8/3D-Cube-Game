@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: rock material 1
+  m_Name: seaweed
   m_Shader: {fileID: 4800000, guid: 1fe8cefbb0066914f8f323f408d6b201, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
@@ -79,13 +79,13 @@ Material:
     - _GlossyReflections: 1
     - _GradIntensity: 0
     - _GradYCap: 0
-    - _HighIntensity: 10
+    - _HighIntensity: 2.07
     - _LightScalar: 0.73
-    - _LowIntensity: 9.53
+    - _LowIntensity: 3.1
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineSize: 15.36
+    - _OutlineSize: 11.65
     - _Parallax: 0.02
     - _RampLevels: 6
     - _RimAlpha: 0
@@ -97,11 +97,11 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.18867922, g: 0.18322699, b: 0.17354928, a: 1}
+    - _Color: {r: 0.21281666, g: 0.4528302, b: 0.20291919, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
     - _HighColor: {r: 1, g: 1, b: 1, a: 1}
-    - _LowColor: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
+    - _LowColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
     - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
