@@ -289,6 +289,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Container1
       objectReference: {fileID: 0}
+    - target: {fileID: 8518000968616508111, guid: 74df429afc95c6642a31cb55a616fdd9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860670714158695163, guid: 74df429afc95c6642a31cb55a616fdd9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74df429afc95c6642a31cb55a616fdd9, type: 3}
 --- !u!4 &401175219 stripped
@@ -358,7 +366,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415717739}
-  m_LocalRotation: {x: 0.14994828, y: -0.28406852, z: 0.045030143, w: 0.94593495}
+  m_LocalRotation: {x: 0.14994825, y: -0.2840685, z: 0.045030124, w: 0.945935}
   m_LocalPosition: {x: 11.68, y: -1.19, z: -5.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -554,7 +562,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 1
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -934,8 +942,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1186718800403708277, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.977
+      objectReference: {fileID: 0}
     - target: {fileID: 1656410392978759056, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3493347052719352961, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 127
+      objectReference: {fileID: 0}
+    - target: {fileID: 5101267307414069608, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8290003
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697074438407038147, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
+      propertyPath: m_DrawHeightmap
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697074438407038147, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
+      propertyPath: m_AllowAutoConnect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697074438407038147, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
+      propertyPath: m_ShadowCastingMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697074438407038147, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
+      propertyPath: m_LightmapParameters
+      value: 
+      objectReference: {fileID: 15201, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 5697074438407038147, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
+      propertyPath: m_ReflectionProbeUsage
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5813091867332950524, guid: 44eb633850c341e47bf0e38a292a6b35, type: 3}
