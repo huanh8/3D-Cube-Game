@@ -39,18 +39,17 @@ public class CameraSwitch : MonoBehaviour
         
         // click this gameObject to switch camera by change the property of camera1
         if (Input.GetMouseButtonDown(0)){ // if left button pressed...
-            Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-            // draw the ray 
-            Debug.DrawRay(ray.origin, ray.direction * 1000, Color.black);
-            if (Physics.Raycast(ray, out hit)){
-                Debug.Log(hit.collider.gameObject.name);
-                if (hit.collider.gameObject == this.gameObject)
-                {
+            RaycastHit[] hits;
+            hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition));
+            for (int i = 0; i < hits.Length; i++){
+                RaycastHit hit = hits[i];
+                if (hit.collider.gameObject == this.gameObject){
                     SwitchToFollow();
-                    return;
+                    Debug.Log("Switch to follow camera"+ hit.collider.gameObject.name);
+                    // draw the line and highlight the collision
+                    Debug.DrawLine(Camera.main.transform.position, hit.point, Color.red, 1.0f);
+                    break;
                 }
-
             }
         }
   
