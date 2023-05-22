@@ -10,14 +10,14 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private Animator _anim;
-    private float _speed = 2f;
-    private float _rotationSpeed = 100f;
-    private float _upDownSpeed = 2f;
+    [SerializeField] private float _speed = 2f;
+    [SerializeField] private float _rotationSpeed = 100f;
+    [SerializeField] private float _upDownSpeed = 2f;
 
     void Start()
     {
-        _anim = GetComponent<Animator>();  
-    }   
+        _anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
@@ -63,21 +63,25 @@ public class Movement : MonoBehaviour
 
     }
 
-	public void PlayAnimation(string s) {
-		_anim.Play (s);
+    public void PlayAnimation(string s)
+    {
+        _anim.Play(s);
 
-		if (s == "Idle") {
-			_anim.SetBool ("isWalking", false);
-			_anim.SetBool ("isRunning", false);
-		}
+        if (s == "Idle")
+        {
+            _anim.SetBool("isWalking", false);
+            _anim.SetBool("isRunning", false);
+        }
 
-		if (s == "Walk") {
-			_anim.SetBool ("isWalking", true);
-			_anim.SetBool ("isRunning", false);
-		}
-		if (s == "Run") {
-			_anim.SetBool ("isWalking", false);
-			_anim.SetBool ("isRunning", true);
-		}
-	}
+        if (s == "Walk")
+        {
+            _anim.SetBool("isWalking", true);
+            _anim.SetBool("isRunning", false);
+        }
+        if (s == "Run")
+        {
+            _anim.SetBool("isWalking", false);
+            _anim.SetBool("isRunning", true);
+        }
+    }
 }

@@ -21,7 +21,7 @@ public class CameraSwitch : MonoBehaviour
         _mainCamera = Camera.main;
         _mapCamera = GameObject.Find("MapCamera").GetComponent<Cinemachine.CinemachineVirtualCamera>();
         _followCamera = GameObject.Find("FollowCamera").GetComponent<Cinemachine.CinemachineVirtualCamera>();
-        _ship = GameObject.Find("Ship");
+        _ship = GameObject.Find("Submarine");
     }
 
     void Update()
