@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213689687892605969}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: -5.84, z: 5}
+  m_LocalPosition: {x: 4, y: -5.168, z: 5}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 4677581898344243646}
   - component: {fileID: 1651915795497848091}
   - component: {fileID: 8211636534328282964}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -416,9 +416,11 @@ GameObject:
   - component: {fileID: 7817208076645504485}
   - component: {fileID: 1619939790}
   - component: {fileID: 1619939791}
-  m_Layer: 7
+  - component: {fileID: 1404894309}
+  - component: {fileID: 1404894310}
+  m_Layer: 8
   m_Name: Container
-  m_TagString: Untagged
+  m_TagString: Container
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -473,6 +475,37 @@ MonoBehaviour:
   _followCamera: {fileID: 0}
   _spawnPoint: {fileID: 0}
   _ship: {fileID: 3749889808387251037, guid: c2f62d840bcc33f4b96b3133d3ba4121, type: 3}
+--- !u!114 &1404894309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016565172180222415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: b8b8ff87c17029f4bb13d7d0eeaef35f, type: 2}
+  isGlobal: 0
+  blendDistance: 0.5
+  weight: 1
+  priority: 0
+--- !u!114 &1404894310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016565172180222415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b8d39195ec6ca48ad4b4f495110931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waterFx: {fileID: 0}
+  _containers: []
 --- !u!1 &8518000967918858819
 GameObject:
   m_ObjectHideFlags: 0
