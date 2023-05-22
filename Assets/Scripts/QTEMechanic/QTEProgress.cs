@@ -38,7 +38,7 @@ public class QTEProgress : MonoBehaviour
     private IEnumerator CompletedQTE()
     {
         // TODO: Add task completing animation here
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
         QTEManager.EndQTE();
     }
 }

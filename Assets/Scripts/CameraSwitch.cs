@@ -41,13 +41,16 @@ public class CameraSwitch : MonoBehaviour
         if (Input.GetMouseButtonDown(0)){ // if left button pressed...
             Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-
+            // draw the ray 
+            Debug.DrawRay(ray.origin, ray.direction * 1000, Color.black);
             if (Physics.Raycast(ray, out hit)){
+                Debug.Log(hit.collider.gameObject.name);
                 if (hit.collider.gameObject == this.gameObject)
                 {
                     SwitchToFollow();
+                    return;
                 }
-        
+
             }
         }
   
@@ -94,5 +97,6 @@ public class CameraSwitch : MonoBehaviour
         }
         _ship.transform.position = _spawnPoint.transform.position;
     }
+
 
 }

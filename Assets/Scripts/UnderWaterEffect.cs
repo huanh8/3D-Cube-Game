@@ -26,7 +26,6 @@ public class UnderWaterEffect : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        
         if (other.gameObject.tag == "MainCamera")
         {
             if (_waterFx != null) _waterFx.SetActive(true);
