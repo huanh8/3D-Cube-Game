@@ -21,7 +21,7 @@ public class CameraSwitch : MonoBehaviour
         _mainCamera = Camera.main;
         _mapCamera = GameObject.Find("MapCamera").GetComponent<Cinemachine.CinemachineVirtualCamera>();
         _followCamera = GameObject.Find("FollowCamera").GetComponent<Cinemachine.CinemachineVirtualCamera>();
-        _ship = GameObject.Find("Ship");
+        _ship = GameObject.Find("Submarine");
     }
 
     void Update()
@@ -39,15 +39,17 @@ public class CameraSwitch : MonoBehaviour
         
         // click this gameObject to switch camera by change the property of camera1
         if (Input.GetMouseButtonDown(0)){ // if left button pressed...
-            Ray ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit)){
-                if (hit.collider.gameObject == this.gameObject)
-                {
+            RaycastHit[] hits;
+            hits = Physics.RaycastAll(Camera.main.ScreenPointToRay(Input.mousePosition));
+            for (int i = 0; i < hits.Length; i++){
+                RaycastHit hit = hits[i];
+                if (hit.collider.gameObject == this.gameObject){
                     SwitchToFollow();
+                    Debug.Log("Switch to follow camera"+ hit.collider.gameObject.name);
+                    // draw the line and highlight the collision
+                    Debug.DrawLine(Camera.main.transform.position, hit.point, Color.red, 1.0f);
+                    break;
                 }
-        
             }
         }
   
@@ -94,5 +96,6 @@ public class CameraSwitch : MonoBehaviour
         }
         _ship.transform.position = _spawnPoint.transform.position;
     }
+
 
 }

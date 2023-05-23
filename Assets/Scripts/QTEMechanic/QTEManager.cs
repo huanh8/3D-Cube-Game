@@ -18,4 +18,5 @@ public class QTEManager : MonoBehaviour
         QTEBar.SetActive(false);
         ProgressBar.SetActive(false);
     }
+
 }
