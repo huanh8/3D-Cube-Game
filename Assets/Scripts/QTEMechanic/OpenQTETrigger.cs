@@ -39,5 +39,13 @@ public class OpenQTETrigger : MonoBehaviour
             _isTriggered = true;
         }
     }
+    
+    private void OnTriggerExit(Collider other) {
+        if (other.CompareTag("Player"))
+        {
+            notice.SetActive(false);
+            _isTriggered = false;
+        }   
+    }
 
 }
