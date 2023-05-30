@@ -23,7 +23,7 @@ public class OpenQTETrigger : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && _isTriggered)
         {
             Debug.Log("F pressed");
-            QTEManager.StartQTE();
+            QTEManager.StartQTE(this.gameObject);
             notice.SetActive(false);
             _isTriggered = false;
         }

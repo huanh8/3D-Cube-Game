@@ -14,10 +14,15 @@ public class SpawnQTE : MonoBehaviour
     public float spawnMax;
     private float spawnTime;
 
-    // Testing at start
-    void Start()
+
+    void OnEnable()
     {
         StartCoroutine(Spawn());
+    }
+
+    void OnDisable()
+    {
+        StopCoroutine(Spawn());
     }
 
     private IEnumerator Spawn()

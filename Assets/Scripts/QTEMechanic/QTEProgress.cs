@@ -30,15 +30,32 @@ public class QTEProgress : MonoBehaviour
         if (QTEProgressIndex == QTEProgressList.Count)
         {
             Debug.Log("QTE Completed");
-            QTEProgressIndex = 0;
-            StartCoroutine(CompletedQTE());
+            CompletedQTE();
+            ResetProgress();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            // Quit qte without complete it
+            // A difference between EndQTE() is that 
+            // we don't need to turn off qte box since it's incomplete
+            QTEManager.QuitQTE();
+            ResetProgress();
         }
     }
 
-    private IEnumerator CompletedQTE()
+    private void CompletedQTE()
     {
         // TODO: Add task completing animation here
-        yield return new WaitForSeconds(2f);
         QTEManager.EndQTE();
+    }
+
+    private void ResetProgress()
+    {
+        QTEProgressIndex = 0;
+        foreach (GameObject qteProgress in QTEProgressList)
+        {
+            qteProgress.SetActive(false);
+        }
     }
 }
